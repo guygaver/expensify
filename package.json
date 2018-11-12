@@ -10,7 +10,9 @@
     "build:prod": "webpack -p --env production",
     "watch": "webpack-dev-server --mode=development",
     "test": "jest --config=jest.config.json",
-    "test-watch": "jest --config=jest.config.json --watchAll"
+    "test-watch": "jest --config=jest.config.json --watchAll",
+    "start": "node /server/server.js",
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
