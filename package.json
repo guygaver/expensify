@@ -1,11 +1,13 @@
 {
-  "name": "indecision-app",
+  "name": "Expensify",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Andrew Mead",
+  "author": "Guy Gavergun",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode=development",
+    "serve": "live-server public/",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack -p --env production",
     "watch": "webpack-dev-server --mode=development",
     "test": "jest --config=jest.config.json",
     "test-watch": "jest --config=jest.config.json --watchAll"
@@ -27,6 +29,7 @@
     "enzyme-to-json": "3.0.1",
     "global": "^4.3.2",
     "live-server": "^1.2.0",
+    "mini-css-extract-plugin": "^0.4.4",
     "moment": "^2.22.2",
     "node-sass": "^4.9.3",
     "normalize.css": "^8.0.0",
