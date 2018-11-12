@@ -10,7 +10,7 @@ module.exports = (env, argv) => {
         entry: './src/app.js',
 
         output: {
-            path: publicPath,
+            path: path.join(publicPath, 'dist'),
             filename: 'bundle.js'
         },
 
@@ -26,8 +26,14 @@ module.exports = (env, argv) => {
                 test: /\.scss$/,
                 use: [
                     'style-loader',
-                    'css-loader',
-                    'sass-loader'
+                    {
+                        loader: 'css-loader',
+                        options: {sourceMap: true}
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {sourceMap: true}
+                    }
                 ],
                 exclude: /node_modules/
             }]
@@ -37,7 +43,8 @@ module.exports = (env, argv) => {
 
         devServer: {
             contentBase: publicPath,
-            historyApiFallback: true
+            historyApiFallback: true,
+            publicPath: '/dist/'
         }
     };
 };
