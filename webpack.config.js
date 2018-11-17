@@ -4,7 +4,7 @@ const publicPath = path.join(__dirname, 'public');
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-if ( process.end.NODE_ENV === 'test' ) {
+if ( process.env.NODE_ENV === 'test' ) {
     require('dotenv').config({path: '.env.test'})
 } else if ( process.end.NODE_ENV === 'development' ) {
     require('dotenv').config({path: '.env.dev'})
