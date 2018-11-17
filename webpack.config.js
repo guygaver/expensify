@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const publicPath = path.join(__dirname, 'public');
 
-process.env.NODE_ENV = (process.env) ? process.env.NODE_ENV : 'development';
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 if ( process.end.NODE_ENV === 'test' ) {
     require('dotenv').config({path: '.env.test'})

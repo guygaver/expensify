@@ -4,10 +4,13 @@
   "main": "index.js",
   "author": "Guy Gavergun",
   "license": "MIT",
+  "engines": {
+    "node": "9.7.0"
+  },
   "scripts": {
     "serve": "live-server public/",
     "build:dev": "webpack --mode=development",
-    "build:prod": "cross-env NODE_ENV=production webpack -p --env production",
+    "build:prod": "webpack -p --env production",
     "watch": "webpack-dev-server --mode=development",
     "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
     "test-watch": "jest --config=jest.config.json --watchAll",
