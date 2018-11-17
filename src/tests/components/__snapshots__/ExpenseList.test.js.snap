@@ -6,7 +6,7 @@ exports[`should render ExpenseList with expenses 1`] = `
     amount={1000000}
     createdAt={0}
     description="A"
-    id={1}
+    id="1"
     key="1"
     note="Test"
   />
@@ -14,7 +14,7 @@ exports[`should render ExpenseList with expenses 1`] = `
     amount={10000}
     createdAt={345600000}
     description="R"
-    id={2}
+    id="2"
     key="2"
     note="Test"
   />
@@ -22,7 +22,7 @@ exports[`should render ExpenseList with expenses 1`] = `
     amount={10000000}
     createdAt={-345600000}
     description="V"
-    id={3}
+    id="3"
     key="3"
     note="Test"
   />
