@@ -34,7 +34,7 @@ describe('Expense Selector', () => {
             text: '',
             sortBy: 'date',
             startDate: moment(0).subtract(4, 'days'),
-            endDate: moment(2),
+            endDate: moment(0).add(1, 'days'),
         };
 
         const result = expenseSelector(expenses, filters);

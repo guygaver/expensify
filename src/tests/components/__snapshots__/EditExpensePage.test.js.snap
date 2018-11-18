@@ -6,7 +6,7 @@ exports[`should render EditExpenseForm 1`] = `
     expense={
       Object {
         "amount": 1000000,
-        "createdAt": 1,
+        "createdAt": 86400000,
         "description": "A",
         "id": "1",
         "note": "Test",
