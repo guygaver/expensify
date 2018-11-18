@@ -35,5 +35,7 @@ jobs:
         
       # run tests!
       - run: yarn test
+      
+      - run: node --version
 
 
