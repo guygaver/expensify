@@ -3,12 +3,12 @@
 
 An expense tracking app (Built with React and Redux, powered by Firebase, hosted on Heroku)
 
-#Serving app
+# Serving app
 `npm install`
 
 `npm dev-server`
 
-#Running tests
+# Running tests
 `npm test`
 
 In watch mode: `npm test-watch`
