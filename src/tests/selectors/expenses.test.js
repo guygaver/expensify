@@ -39,7 +39,7 @@ describe('Expense Selector', () => {
 
         const result = expenseSelector(expenses, filters);
 
-        expect(result).toEqual([expenses[2]]);
+        expect(result).toEqual([expenses[0], expenses[2]]);
     });
 
     test('should sort by amount', () => {
