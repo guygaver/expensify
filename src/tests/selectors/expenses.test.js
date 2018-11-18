@@ -34,12 +34,12 @@ describe('Expense Selector', () => {
             text: '',
             sortBy: 'date',
             startDate: moment(0).subtract(4, 'days'),
-            endDate: moment(0).add(1, 'days'),
+            endDate: moment(0),
         };
 
         const result = expenseSelector(expenses, filters);
 
-        expect(result).toEqual([expenses[0], expenses[2]]);
+        expect(result).toEqual([expenses[2]]);
     });
 
     test('should sort by amount', () => {
