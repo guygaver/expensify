@@ -3,6 +3,8 @@
 
 An expense tracking app (Built with React and Redux, powered by Firebase, hosted on Heroku)
 
+https://guyg-react-expensify.herokuapp.com/
+
 # Serving app
 `npm install`
 
