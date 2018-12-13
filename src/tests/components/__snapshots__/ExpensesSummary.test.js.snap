@@ -10,11 +10,12 @@ exports[`should render ExpensesSummary with 1 expense 1`] = `
     <h1
       className="page-header__title"
     >
-      Viewing 
+      Viewing
       <span>
         1
       </span>
-       expense/s totaling 
+       
+      expense/s totaling
       <span>
         $100.00
       </span>
@@ -44,11 +45,12 @@ exports[`should render ExpensesSummary with multiple expenses 1`] = `
     <h1
       className="page-header__title"
     >
-      Viewing 
+      Viewing
       <span>
         23
       </span>
-       expense/s totaling 
+       
+      expense/s totaling
       <span>
         $100,032,423.00
       </span>

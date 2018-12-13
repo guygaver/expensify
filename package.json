@@ -15,7 +15,8 @@
     "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
     "test-watch": "jest --config=jest.config.json --watchAll",
     "start": "node server/server.js",
-    "heroku-postbuild": "yarn run build:prod"
+    "heroku-postbuild": "yarn run build:prod",
+    "lint": "eslint ./src --fix"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
@@ -57,10 +58,16 @@
     "webpack": "4.20.2"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "cross-env": "^5.2.0",
     "enzyme": "3.0.0",
     "enzyme-adapter-react-16": "1.0.0",
     "enzyme-to-json": "3.0.1",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "jest": "^23.6.0",
     "live-server": "^1.2.0",
     "react-test-renderer": "16.0.0",

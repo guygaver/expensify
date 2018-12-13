@@ -2,7 +2,8 @@
 
 exports[`should render ExpenseListItem 1`] = `
 <div>
-  404! 
+  404!
+   
   <Link
     replace={false}
     to="/"
